@@ -1,20 +1,31 @@
 // business logic
-var output = function(input) {
+function output(input) {
   if (input >=0) {
-    var numArrs = Array.from(Array(input +1).keys());  
-
-    for (var i=0; i < numArrs.length; i++)
-    if (numArrs.includes(3)) {
-      numArr = numArr[numArr.indexOf("3")].replace("3", "I'm sorry, Dave. I'm afraid I can't do that.");
-    }
-
-    return numArrs;
+    
+    return rangeOfNumber(input);
   } else {
-    alert("Please, enter a Positive Number");
+    alert("Error: Please, enter a Positive Number");
     location.reload();
   }
 }
 
+function rangeOfNumber(input) {
+  var numArr = Array.from(Array(input +1).keys());
+  return numArr;
+}
+
+
+    //var numArrStr = numArr.toString().split(",")
+    //for (var i=0; i < numArrStr.length; i++)
+    
+//     if (numArr.includes(3)) {
+//       var numContain3 = numArr[numArrStr.indexOf("3")].toString();
+//       numContain3.replace("3", "I'm sorry, Dave. I'm afraid I can't do that.");
+//       return numArrStr;
+//     }
+
+
+ 
 
 
 
