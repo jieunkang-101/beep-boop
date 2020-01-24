@@ -8,14 +8,29 @@ function output(input) {
   }
 }
 
-function rangeOfNumber(input) {
-  var numArr = Array.from(Array(input +1).keys());
-  //var numArr = [];
-  for (var i=0; i <= numArr.length; i++) {
-    if (numArr.indexOf(3)) {
-      var numContain3 = numArr[numArr.indexOf(3)].toString();
-      numContain3.replace("3", "I'm sorry, Dave. I'm afraid I can't do that.")
+function rangeOfNumber(input){
+  var numArr = [];
+  for (var i=0; i <= input; i++) {
+    numArr.push(i);
   }
+  return numArr;
+}
+
+function output(input) {
+  
+}
+
+
+
+//function rangeOfNumber(input) {
+  // var numArr = Array.from(Array(input +1).keys());
+  //var numArr = [];
+  //for (var i=0; i <= numArr.length; i++) {
+  //   if (input.indexOf(3)) {
+  //     // var numContain3 = numArr[numArr.indexOf(3)].toString();
+  //     // numContain3.replace("3", "I'm sorry, Dave. I'm afraid I can't do that.");
+  //     output = "I'm sorry, Dave. I'm afraid I can't do that."
+  // }
  
       //return numArr.replace("3", "I'm sorry, Dave. I'm afraid I can't do that.");
       
@@ -23,9 +38,9 @@ function rangeOfNumber(input) {
       // var numContain3 = numArr[numArrStr.indexOf(3)].toString();
       // numContain3.replace("3", "I'm sorry, Dave. I'm afraid I can't do that.");
       // return numArrStr;
-  return numArr;
-}
-}
+//   return numArr;
+// }
+
 
 
 
