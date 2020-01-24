@@ -1,6 +1,6 @@
 # Beep Boop
 
-#### A web application that returns a range of numbers with some exceptions, 24 January 2020
+#### A web application that returns a range of numbers with some exceptions based on the user inputted number, 24 January 2020
 
 #### By **Jieun Kang**
 
@@ -18,11 +18,12 @@ This web application that takes a number from a user and returns a range of numb
 
 ## Behavior Driven Development Specifications
 
-| Behavior (Spec)                                       | Input    | Output|
-| :---------------------------------------------------- | :------- | :---- |
-
-
-
+| Behavior (Spec)                 | Input    | Output|
+| :------------------------------ | :------- | :---- |
+| **  The program returns a range of numbers from 0 to the users inputted numbe | 4 | "0", 1, 2, 3, 4 |
+| ** If numbers that contain a "3", all digits are replaced with "I'm sorry, Dave. I'm afraid I can't do that" | 3 | "0", 1, 2, "I'm sorry, Dave. I'm afraid I can't do that" |
+| ** If numbers that contain a "2", all digits are replaced with "Boop!" | "5" | "0", 1, "Boop!", "I'm sorry, Dave. I'm afraid I can't do that", 4, 5 |
+| ** If numbers that contain a "1", all digits are replaced with "Beep!" | 13 | "0", "Beep!", "Boop!", "I'm sorry, Dave. I'm afraid I can't do that", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!", "Boop!", "I'm sorry, Dave. I'm afraid I can't do that" |
 
 ## Technologies Used
 
