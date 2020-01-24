@@ -6,7 +6,7 @@
 
 ## Description
 
-This web application that takes a number from a user and returns a range of numbers from 0 to the user inputted number with the exceptions. If the numbers contains a 1, 2, or 3, it will be replaced "Beep", "Boop", or "I'm sorry, Dave. I'm afraid I can't do that.". 
+This web application that takes a number from a user and returns a range of numbers from 0 to the user inputted number with the exceptions. If the numbers contains a 1, 2, or 3, it will be replaced "Beep!", "Boop!", or "I'm sorry, Dave. I'm afraid I can't do that.". 
 
 ## Setup/Installation Requirements
 
