@@ -13,10 +13,12 @@ function replace(input) {
   var numArr = [];
   for (var i=0; i <= input; i++) {
     numArr.push(i);}
+    //return numArr;
+
   if (numArr.includes(3)) {
     var numThree = numArr[numArr.indexOf(3)].toString();
     var output = numThree.replace("3", "I'm sorry, Dave. I'm afraid I can't do that.")
-    return output;
+    return numArr;
     } else if (numArr.includes(2)) {
       var numTwo = numArr[numArr.indexOf(2)].toString();
       var output = numTwo.replace("2", "Boop!")
@@ -25,8 +27,10 @@ function replace(input) {
         var numOne = numArr[numArr.indexOf(1)].toString();
         var output = numOne.replace("1", "Beep!")
         return output;
-        } 
-  return numArr;
+        } else {
+         
+        }
+  
 }
 
 
