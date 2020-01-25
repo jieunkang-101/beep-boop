@@ -1,4 +1,4 @@
-// =============business logic=============
+// =============Business Logic=============
 function output(input) {
   if (input >=0) {
     return rangeOfNum(input);
@@ -12,26 +12,31 @@ function rangeOfNum(input) {
   for (var i=0; i <= input; i++) {
     var strNumArr = i.toString();
     if (strNumArr.includes("3")) {
-      numArr.push("<li>I'm sorry, Dave. I'm afraid I can't do that.</li>");
+      numArr.push(" I'm sorry, Dave. I'm afraid I can't do that. ");
     } else if (strNumArr.includes("2")) {
-      numArr.push("<li>Boop!</li>");
+      numArr.push(" Boop! ");
     } else if (strNumArr.includes("1")) {
-      numArr.push("<li>Beep!</li>");
+      numArr.push(" Beep! ");
     } else {
-      numArr.push("<li>"+ i +"</li>");
+      numArr.push(" "+ i +" ");
     }  
   }
   console.log(numArr);
   return numArr;
 }
 
-// =========user interface logic===========
+// =========User Interface Logic===========
 $(document).ready(function() {
   $("form#formOne").submit(function(event) {
     event.preventDefault();
     var input = parseInt($("input#userInput").val());
-    $("#result").hide();
-    $("#result").fadeIn();
-    $("#output").html(output(input));
+    $("#output").hide();
+    $("#output").fadeIn();
+    $("#result").text(output(input));
+  });
+  $("#reverse").click(function(event) {
+    event.preventDefault();
+    var input = parseInt($("input#userInput").val());
+    $("#result").text(rangeOfNum(input).reverse());
   });
 });
