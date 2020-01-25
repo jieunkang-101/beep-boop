@@ -9,15 +9,16 @@ function output(input) {
 }
 
 function replace(input) {
-  //var numArr = Array.from(Array(input +1).keys());
-  var numArr = [];
-  for (var i=0; i <= input; i++) {
-    numArr.push(i);}
+  var numArr = Array.from(Array(input +1).keys());
+  // var numArr = [];
+  // for (var i=0; i <= input; i++) {
+  //   numArr.push(i);}
     //return numArr;
 
   if (numArr.includes(3)) {
-    var numThree = numArr[numArr.indexOf(3)].toString();
-    var output = numThree.replace(3, "I'm sorry, Dave. I'm afraid I can't do that.")
+    var numThree = numArr[numArr.indexOf(3)]
+    var output = numThree.toString("I'm sorry, Dave. I'm afraid I can't do that.");
+    
     return numArr + output;
     } else if (numArr.includes(2)) {
       var numTwo = numArr[numArr.indexOf(2)].toString();
@@ -41,8 +42,6 @@ function replace(input) {
 //     return numArr; 
 // }    
 
-
-  // var numArr = Array.from(Array(input +1).keys());
       
 
 // =========user interface logic===========
