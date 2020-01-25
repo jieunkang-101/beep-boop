@@ -20,10 +20,10 @@ This web application that takes a number from a user and returns a range of numb
 
 | Behavior (Spec)                 | Input    | Output|
 | :------------------------------ | :------- | :---- |
-| **The program returns a range of numbers from 0 to the users inputted number** |: 4 :| "0", 1, 2, 3, 4 |
-| **If numbers that contain a "3", all digits are replaced with "I'm sorry, Dave. I'm afraid I can't do that"** |: 3 :| "0", 1, 2, "I'm sorry, Dave. I'm afraid I can't do that" |
-| **If numbers that contain a "2", all digits are replaced with "Boop!"** |: 5 :| "0", 1, "Boop!", "I'm sorry, Dave. I'm afraid I can't do that", 4, 5 |
-| **If numbers that contain a "1", all digits are replaced with "Beep!"** |: 15 :| "0", "Beep!", "Boop!", "I'm sorry, Dave. I'm afraid I can't do that", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!", "Boop!", "I'm sorry, Dave. I'm afraid I can't do that", 14, 15 |
+| **The program returns a range of numbers from 0 to the users inputted number** | 4 | "0", 1, 2, 3, 4 |
+| **If numbers that contain a "3", all digits are replaced with "I'm sorry, Dave. I'm afraid I can't do that"** | 3 | "0", 1, 2, "I'm sorry, Dave. I'm afraid I can't do that" |
+| **If numbers that contain a "2", all digits are replaced with "Boop!"** | 5 | "0", 1, "Boop!", "I'm sorry, Dave. I'm afraid I can't do that", 4, 5 |
+| **If numbers that contain a "1", all digits are replaced with "Beep!"** | 15 | "0", "Beep!", "Boop!", "I'm sorry, Dave. I'm afraid I can't do that", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!", "Boop!", "I'm sorry, Dave. I'm afraid I can't do that", 14, 15 |
 
 ## Technologies Used
 

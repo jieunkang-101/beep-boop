@@ -11,30 +11,18 @@ function output(input) {
 function replace(input) {
   var numArr = [];
   for (var i=0; i <= input; i++) {
-    numArr.push(" " + i);
-   // return numArr;
-   if (numArr[i] == 3) {
-      var numArrThree = numArr.map(function(item) {
-        return item == 3 ? " I'm sorry, Dave. I'm afraid I can't do that. " : item;
-      });
-      return numArrThree;
-    } 
-    // } else  if (numArr[i] == 2) {
-    //   var numArrTwo = numArr.map(function(item) {
-    //     return item == 2 ? "Boop!" : item;
-    //   });
-    //   return numArrTwo;
-    // }
-
-
+    var strNumArr = i.toString();
+    if (strNumArr.includes("3")) {
+      numArr.push("I'm sorry, Dave. I'm afraid I can't do that.");
+    } else if (strNumArr.includes("2")) {
+      numArr.push("Boop!");
+    } else if (strNumArr.includes("1")) {
+      numArr.push("Beep!");
+    } else {
+      numArr.push(i);
+    }  
   }
 }
-// function rangeOfNumber(input){
-//   var numArr = [];
-//   for (var i=0; i <= input; i++) {
-//     numArr.push(i);}
-//     return numArr; 
-// }    
 
       //var numArr = Array.from(Array(input +1).keys());
 
